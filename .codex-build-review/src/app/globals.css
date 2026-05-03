@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+    --background: #f7f2e9;
+    --foreground: #1a150a;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+}
+
+@layer base {
+    body {
+        background: var(--background);
+        color: var(--foreground);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .font-eb-garamond {
+        font-family: var(--font-eb-garamond);
+    }
+    .font-homemade-apple {
+        font-family: var(--font-homemade-apple);
+    }
+    .font-gloock {
+        font-family: var(--font-gloock);
+    }
+    .font-libre-baskerville {
+        font-family: var(--font-libre-baskerville);
+    }
+
+    h1 {
+        @apply text-3xl font-medium;
+    }
+    h2 {
+        @apply font-medium text-6xl lg:text-8xl leading-none;
+    }
+    h3 {
+        font-family: var(--font-eb-garamond);
+        @apply text-3xl font-medium;
+    }
+}
+
+@layer components {
+    .grid-container {
+        @apply grid grid-cols-12 auto-rows-min;
+    }
+    .title {
+        @apply text-4xl sm:text-5xl md:text-6xl lg:text-8xl;
+    }
+    .hover-click {
+        @apply hover:opacity-75 opacity-100 duration-100 active:opacity-50;
+    }
+}

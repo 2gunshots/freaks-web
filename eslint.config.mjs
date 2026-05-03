@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local validation copies used for isolated build checks.
+    ".codex-build*/**",
   ]),
 ]);
 

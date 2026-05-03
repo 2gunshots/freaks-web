@@ -1,0 +1,13 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/.codex-build-review-net/src/app/terms/page": [
+      "static/media/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2",
+      "static/media/691f7cbfe73110bf-s.p.0bmjxzzn7mump.woff2",
+      "static/media/e4505858a30c79c2-s.p.14m88r~v.m-cq.woff2",
+      "static/media/c5bca4b73401f535-s.p.0ld0~zebno3h8.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

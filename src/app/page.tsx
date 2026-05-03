@@ -1,65 +1,90 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    return (
+        <div className="h-screen w-screen overflow-hidden flex flex-col">
+            {/* Header */}
+            <header className="border-b px-10 lg:px-24 py-5 flex items-center justify-between">
+                <Link href="/">
+                    <h3 className="font-gloock text-3xl">Freaks</h3>
+                </Link>
+
+                {/* <div className="flex gap-6 text-sm">
+                    <Link href="/about">Our Story</Link>
+                    <Link href="/membership">Membership</Link>
+                </div> */}
+            </header>
+
+            {/* Hero Section */}
+            <main className="flex-1 relative flex items-center justify-between">
+                <div className="max-w-3xl z-10 pl-10 lg:pl-24">
+                    <h2 className="font-eb-garamond font-medium text-6xl lg:text-8xl leading-none ">
+                        Leave nothing <br />
+                        to chance
+                    </h2>
+                    <h3 className="mt-4 text-lg font-sans">
+                        Track habits. Build streaks. Stay consistent.
+                    </h3>
+
+                    <div
+                        // href="/membership"
+                        className="pointer-events-none w-fit flex flex-row justify-between items-center gap-5 py-1 pr-1 pl-7 rounded-full bg-black text-background mt-10"
+                    >
+                        {/* Become a member */}
+                        Coming Soon
+                        <div className="aspect-square p-1.5 rounded-full bg-background">
+                            <svg
+                                viewBox="0 0 24 24"
+                                strokeWidth={1.5}
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                stroke="currentColor"
+                                className="size-7 text-black"
+                            >
+                                <path
+                                    d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className="relative">
+                        <Image
+                            className="hidden md:block mix-blend-multiply z-10 w-150 h-auto"
+                            src="/images/freaks-art.webp"
+                            alt="Brand Art"
+                            width={858}
+                            height={750}
+                            sizes="600px"
+                            loading="eager"
+                        />
+                        {/* <StarField /> */}
+                    </div>
+                </div>
+            </main>
+            {/* <ShootingStarField
+                src="/images/comet.png"
+                count={3}
+                width={400}
+                height={160}
+            /> */}
+            <footer className="p-4 border-t flex flex-row items-center justify-center gap-5 text-sm">
+                {/* <div>Copyright © 2023 Freaks</div>*/}
+                <Link className="hover-click" href="/about">
+                    About
+                </Link>
+                <Link className="hover-click" href="/privacy">
+                    Privacy Policy
+                </Link>
+                <Link className="hover-click" href="/terms">
+                    Terms & Conditions
+                </Link>
+                {/* <div>Contact</div> */}
+            </footer>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    );
 }
