@@ -22,74 +22,77 @@ export default function Privacy() {
                     </h1>
 
                     <p className="text-sm text-gray-500">
-                        Last updated: April 2026
+                        Last updated: May 2026
                     </p>
 
                     <p>
                         Freaks (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or
-                        &ldquo;the app&rdquo;) is committed to protecting your
-                        privacy. This Privacy Policy explains how we collect,
-                        use, and protect your information when you use our app.
+                        &ldquo;the app&rdquo;) is designed with privacy in mind.
+                        This Privacy Policy explains how your information is
+                        handled when you use the app.
                     </p>
 
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
                             1. Information We Collect
                         </h2>
-                        <p>We may collect the following information:</p>
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li>
-                                Account information (such as email address and
-                                name) through our authentication provider
-                            </li>
-                            <li>
-                                User-generated data such as habits, entries,
-                                and progress
-                            </li>
-                            <li>
-                                Device information for app functionality and
-                                notifications
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section className="space-y-3">
-                        <h2 className="text-xl lg:text-2xl font-semibold">
-                            2. How We Use Your Information
-                        </h2>
-                        <p>We use your information to:</p>
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li>Provide and maintain the app</li>
-                            <li>Store and sync your habits and progress</li>
-                            <li>Send reminders and notifications you enable</li>
-                            <li>Improve app performance and user experience</li>
-                        </ul>
-                    </section>
-
-                    <section className="space-y-3">
-                        <h2 className="text-xl lg:text-2xl font-semibold">
-                            3. Data Storage
-                        </h2>
                         <p>
-                            Your data is securely stored using third-party
-                            services, including our authentication provider and
-                            database services used by the app.
+                            {" "}
+                            You may enter and store information within the app,
+                            such as:
                         </p>
-                        <p>We do not sell your personal data.</p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>Habits, progress, and activity data</li>
+                            <li>Preferences and settings</li>
+                            <li>
+                                Optional profile information (such as your name
+                                or profile image)
+                            </li>
+                        </ul>
                     </section>
 
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
-                            4. Third-Party Services
+                            2. How Your Data Is Stored
                         </h2>
-                        <p>We use third-party services such as:</p>
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li>Clerk (authentication and user management)</li>
-                            <li>Expo / notification services</li>
-                        </ul>
                         <p>
-                            These services may process data according to their
-                            own privacy policies.
+                            All data you enter into Freaks is stored locally on
+                            your device.
+                        </p>
+
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>No data is transmitted to our servers</li>
+                            <li>No external databases are used</li>
+                            <li>We do not have access to your data</li>
+                        </ul>
+                    </section>
+
+                    <section className="space-y-3">
+                        <h2 className="text-xl lg:text-2xl font-semibold">
+                            3. Data Collection
+                        </h2>
+
+                        <p>
+                            Freaks does not collect, store, or process personal
+                            data on external servers.
+                        </p>
+
+                        <p>
+                            We do not track users, use analytics, or share data
+                            with third parties.
+                        </p>
+                    </section>
+
+                    <section className="space-y-3">
+                        <h2 className="text-xl lg:text-2xl font-semibold">
+                            4. Notifications
+                        </h2>
+
+                        <p>
+                            If enabled, the app may send reminders using your
+                            device&rsquo;s notification system. These
+                            notifications are managed by your device and not
+                            stored by us.
                         </p>
                     </section>
 
@@ -97,19 +100,35 @@ export default function Privacy() {
                         <h2 className="text-xl lg:text-2xl font-semibold">
                             5. Data Deletion
                         </h2>
+
                         <p>
-                            You may request deletion of your account and data at
-                            any time by contacting us.
+                            You can permanently delete all your data at any time
+                            using the in-app “Delete” option in settings.
+                        </p>
+
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>
+                                This will remove all habits, progress, and
+                                profile data
+                            </li>
+                            <li>Deletion happens locally on your device</li>
+                            <li>It cannot be recovered after confirmation</li>
+                        </ul>
+
+                        <p>
+                            You can also remove all data by uninstalling the app
+                            or clearing app storage on your device.
                         </p>
                     </section>
 
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
-                            6. Children&apos;s Privacy
+                            6. Children&rsquo;s Privacy
                         </h2>
                         <p>
-                            This app is not intended for children under 13. We
-                            do not knowingly collect data from children.
+                            Freaks does not knowingly collect personal data from
+                            anyone, including children, as no data is
+                            transmitted outside the device.
                         </p>
                     </section>
 

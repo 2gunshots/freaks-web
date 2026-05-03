@@ -22,7 +22,7 @@ export default function Terms() {
                     </h1>
 
                     <p className="text-sm text-gray-500">
-                        Last updated: April 2026
+                        Last updated: May 2026
                     </p>
 
                     <p>
@@ -64,74 +64,40 @@ export default function Terms() {
 
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
-                            2. Accounts
+                            2. User Data
                         </h2>
 
                         <p>
-                            To use Freaks, you may be required to sign in using
-                            a third-party authentication provider.
-                        </p>
-
-                        <p>You are responsible for:</p>
-
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li>Maintaining the security of your account</li>
-                            <li>All activity under your account</li>
-                        </ul>
-
-                        <p>
-                            We are not responsible for unauthorized access
-                            caused by compromised credentials.
-                        </p>
-                    </section>
-
-                    <section className="space-y-3">
-                        <h2 className="text-xl lg:text-2xl font-semibold">
-                            3. User Data
-                        </h2>
-
-                        <p>
-                            You may create and store personal data such as
-                            habits, progress, and preferences.
+                            You may create and store data such as habits,
+                            progress, preferences, and optional profile
+                            information (such as a name or profile image).
                         </p>
 
                         <p>This data:</p>
 
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Belongs to you</li>
-                            <li>
-                                Is stored using third-party infrastructure
-                                providers
-                            </li>
+                            <li>Is stored locally on your device</li>
+                            <li>Is not transmitted to external servers</li>
+                            <li>Remains under your control</li>
                         </ul>
 
-                        <p>
-                            We do not claim ownership of your personal content.
-                        </p>
+                        <p>We do not claim ownership of your content.</p>
                     </section>
 
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
-                            4. Third-Party Services
+                            3. Data Collection
                         </h2>
 
-                        <p>Freaks uses third-party services including:</p>
-
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li>Authentication and user management services</li>
-                            <li>Notification delivery services</li>
-                        </ul>
-
                         <p>
-                            These services may process your data under their own
-                            policies. We are not responsible for their
-                            practices.
+                            Freaks does not collect personal data, track users,
+                            or store information on external servers.
                         </p>
                     </section>
 
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
-                            5. Notifications
+                            4. Notifications
                         </h2>
 
                         <p>
@@ -143,7 +109,7 @@ export default function Terms() {
 
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
-                            6. Service Availability
+                            5. Service Availability
                         </h2>
 
                         <p>
@@ -159,11 +125,11 @@ export default function Terms() {
 
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
-                            7. Termination
+                            6. Termination
                         </h2>
 
                         <p>
-                            We reserve the right to suspend or terminate access
+                            We reserve the right to restrict or terminate access
                             if:
                         </p>
 
@@ -176,7 +142,7 @@ export default function Terms() {
 
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
-                            8. Disclaimer
+                            7. Disclaimer
                         </h2>
 
                         <p>
@@ -196,7 +162,7 @@ export default function Terms() {
 
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
-                            9. Changes to These Terms
+                            8. Changes to These Terms
                         </h2>
 
                         <p>
