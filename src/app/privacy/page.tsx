@@ -37,7 +37,6 @@ export default function Privacy() {
                             1. Information We Collect
                         </h2>
                         <p>
-                            {" "}
                             You may enter and store information within the app,
                             such as:
                         </p>
