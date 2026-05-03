@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div className="h-screen w-screen overflow-hidden flex flex-col">
             {/* Header */}
-            <header className="border-b px-10 lg:px-24 py-5 flex items-center justify-between">
+            <header className="border-b px-6 md:px-10 lg:px-24 py-5 flex items-center justify-between">
                 <Link href="/">
                     <h3 className="font-gloock text-3xl">Freaks</h3>
                 </Link>
@@ -18,18 +18,18 @@ export default function Home() {
 
             {/* Hero Section */}
             <main className="flex-1 relative flex items-center justify-between">
-                <div className="max-w-3xl z-10 pl-10 lg:pl-24">
-                    <h2 className="font-eb-garamond font-medium text-6xl lg:text-8xl leading-none ">
+                <div className="max-w-3xl z-10 px-6 md:pl-10 lg:pl-24">
+                    <h2 className="font-eb-garamond font-medium text-7xl lg:text-8xl leading-none ">
                         Leave nothing <br />
                         to chance
                     </h2>
-                    <h3 className="mt-4 text-lg font-sans">
+                    <h3 className="mt-4 text-xl font-sans font-normal">
                         Track habits. Build streaks. Stay consistent.
                     </h3>
 
                     <div
                         // href="/membership"
-                        className="pointer-events-none w-fit flex flex-row justify-between items-center gap-5 py-1 pr-1 pl-7 rounded-full bg-black text-background mt-10"
+                        className="pointer-events-none w-fit flex flex-row justify-between items-center gap-5 py-1 pr-1 pl-7 rounded-full bg-accent md:bg-black text-background mt-10"
                     >
                         {/* Become a member */}
                         Coming Soon
@@ -72,7 +72,7 @@ export default function Home() {
                 width={400}
                 height={160}
             /> */}
-            <footer className="p-4 border-t flex flex-row items-center justify-center gap-5 text-sm">
+            <footer className="py-4 px-6 md:px-10 border-t flex flex-row items-center md:justify-center gap-3 md:gap-4 text-xs md:text-sm">
                 {/* <div>Copyright © 2023 Freaks</div>*/}
                 <Link className="hover-click" href="/about">
                     About

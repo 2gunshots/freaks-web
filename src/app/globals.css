@@ -3,11 +3,13 @@
 :root {
     --background: #f2f3f5;
     --foreground: #18202c;
+    --accent: #3a7ab0;
 }
 
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
+    --color-accent: var(--accent);
 }
 
 @layer base {
