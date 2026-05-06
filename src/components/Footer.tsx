@@ -1,14 +1,27 @@
 import Link from "next/link";
 
-export default function Footer() {
+export default function Footer({
+    backgroundColor,
+    color,
+    border = true,
+}: {
+    backgroundColor?: string;
+    color?: string;
+    border?: boolean;
+}) {
     return (
-        <footer className="px-6 lg:px-24 py-5 border-t flex flex-col md:flex-row items-center justify-between">
+        <footer
+            className={`px-6 lg:px-24 py-5  flex flex-col md:flex-row items-center justify-between ${backgroundColor || "bg-background"} ${color || "text-foreground"} ${border && "border-t"}`}
+        >
             <Link href="/">
-                <h3 className="font-gloock text-3xl">Freaks</h3>
+                <h3 className="font-gloock text-3xl select-none">Freaks</h3>
             </Link>
             <div className="flex flex-row items-center gap-2 md:gap-3 lg:gap-4 text-xs underline md:text-sm">
                 <Link className="hover-click" href="/about">
                     About
+                </Link>
+                <Link className="hover-click" href="/help">
+                    Help
                 </Link>
                 <Link className="hover-click" href="/privacy">
                     Privacy Policy

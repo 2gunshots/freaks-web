@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,11 +9,7 @@ export default function Membership() {
     return (
         <div className="min-h-screen flex flex-col">
             {/* Header */}
-            <header className="px-6 lg:px-24 py-5 flex items-center justify-between bg-black text-background">
-                <Link href="/">
-                    <h3 className="font-gloock text-3xl">Freaks</h3>
-                </Link>
-            </header>
+            <Header />
             <section className="relative bg-amber-300 p-10 flex justify-center items-center">
                 <h3 className="font-homemade-apple">Own your consistency</h3>
                 {/* <Image src="/images/texture.png" fill alt="" className="h-auto w-full object-cover mix-blend-multiply "></Image> */}

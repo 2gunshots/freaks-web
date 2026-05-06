@@ -1,21 +1,10 @@
 import type { Metadata } from "next";
-import {
-    EB_Garamond,
-    Homemade_Apple,
-    Gloock,
-    Libre_Baskerville,
-} from "next/font/google";
+import { EB_Garamond, Gloock, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 
 const libreBaskerville = Libre_Baskerville({
     // weight: ["400", "700"],
     variable: "--font-libre-baskerville",
-    subsets: ["latin"],
-});
-
-const homemadeApple = Homemade_Apple({
-    weight: ["400"],
-    variable: "--font-homemade-apple",
     subsets: ["latin"],
 });
 
@@ -61,7 +50,7 @@ export default function RootLayout({
     return (
         <html
             lang="en"
-            className={`${homemadeApple.variable} ${ebGaramond.variable} ${gloock.variable} ${libreBaskerville.variable} h-full antialiased`}
+            className={` ${ebGaramond.variable} ${gloock.variable} ${libreBaskerville.variable} h-full antialiased`}
         >
             <body className="min-h-full flex flex-col overflow-x-hidden">
                 {children}

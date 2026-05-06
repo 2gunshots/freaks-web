@@ -1,14 +1,11 @@
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Link from "next/link";
 
 export default function Privacy() {
     return (
         <div className="min-h-screen flex flex-col">
-            <header className="px-6 lg:px-24 py-5 flex items-center justify-between bg-black text-background">
-                <Link href="/">
-                    <h3 className="font-gloock text-3xl">Freaks</h3>
-                </Link>
-            </header>
+            <Header />
 
             <main className="flex-1 flex justify-center px-6">
                 <article

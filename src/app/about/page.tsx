@@ -1,14 +1,11 @@
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Link from "next/link";
 
 export default function About() {
     return (
         <div className="min-h-screen flex flex-col">
-            <header className="px-6 lg:px-24 py-5 flex items-center justify-between bg-black text-background">
-                <Link href="/">
-                    <h3 className="font-gloock text-3xl">Freaks</h3>
-                </Link>
-            </header>
+            <Header />
 
             <main className="flex-1 flex flex-col items-center justify-center px-6">
                 <article
@@ -28,10 +25,10 @@ export default function About() {
 
                         <p>
                             But when you look at anyone who is actually great at
-                            what they do, the guitarists with calloused
-                            fingers, the coders who see logic in their sleep,
-                            the runners who hit the pavement in the pouring
-                            rain, you realize they aren&apos;t just
+                            what they do, the guitarists with calloused fingers,
+                            the coders who see logic in their sleep, the runners
+                            who hit the pavement in the pouring rain, you
+                            realize they aren&apos;t just
                             &ldquo;consistent.&rdquo; They&apos;re obsessed.
                             They&apos;re all in.
                         </p>
@@ -66,9 +63,9 @@ export default function About() {
 
                         <p>
                             That&apos;s why we focus on the consistency score.
-                            It&apos;s not about being a perfect human being
-                            100% of the time (good luck with that). It&apos;s
-                            about owning your data. It&apos;s about seeing the
+                            It&apos;s not about being a perfect human being 100%
+                            of the time (good luck with that). It&apos;s about
+                            owning your data. It&apos;s about seeing the
                             &ldquo;freak&rdquo; in yourself.
                         </p>
 
@@ -96,9 +93,9 @@ export default function About() {
                         <p>
                             If you&apos;re the type of person who actually
                             enjoys seeing your consistency climb from 70% to
-                            80%, you&apos;re in the right place. You
-                            aren&apos;t &ldquo;optimizing your life.&rdquo;
-                            You&apos;re shaping the pattern.
+                            80%, you&apos;re in the right place. You aren&apos;t
+                            &ldquo;optimizing your life.&rdquo; You&apos;re
+                            shaping the pattern.
                         </p>
 
                         <p>

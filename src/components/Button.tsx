@@ -2,19 +2,29 @@ export default function Button({
     className,
     text,
     onClick,
+    type = "button",
+    disabled = false,
+    secondaryBackground,
 }: {
     className?: string;
     text?: string;
     onClick?: () => void;
+    type?: "button" | "submit" | "reset";
+    disabled?: boolean;
+    secondaryBackground?: string;
 }) {
     return (
         <button
+            type={type}
             onClick={onClick}
-            className={`w-fit flex flex-row justify-between items-center gap-5 py-1 pr-1 pl-7 rounded-full bg-black text-white mt-10 ${className}`}
+            disabled={disabled}
+            className={`w-fit flex flex-row justify-between items-center gap-5 py-1 pr-1 pl-7 rounded-full bg-black text-white mt-10 ${!disabled ? "cursor-pointer" : "pointer-events-none"} ${className}`}
         >
             {text}
-            <div className="aspect-square p-1.5 rounded-full bg-background">
-                <svg
+            <div
+                className={`aspect-square p-1.5 rounded-full ${secondaryBackground ? secondaryBackground : "bg-background"} "`}
+            >
+                {/* <svg
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     fill="none"
@@ -27,7 +37,14 @@ export default function Button({
                         strokeLinecap="round"
                         strokeLinejoin="round"
                     ></path>
-                </svg>
+                </svg> */}
+                <div
+                    className={` aspect-square size-6 flex items-center justify-center rounded-full `}
+                >
+                    <div
+                        className={`w-3 aspect-square rounded-full bg-black`}
+                    ></div>
+                </div>
             </div>
         </button>
     );
