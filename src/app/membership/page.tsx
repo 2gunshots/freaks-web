@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Membership() {
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col bg-background">
             {/* Header */}
             <Header />
 
@@ -21,7 +21,7 @@ export default function Membership() {
                         {/* Monthly */}
                         <div
                             className="rounded-xl -mr-1 -rotate-5 shadow-[0_0_20px_rgba(0,0,0,0.1)] aspect-square
-      w-24 h-24 sm:w-36 sm:h-36 md:w-48 md:h-48
+      w-30 h-30 sm:w-36 sm:h-36 md:w-48 md:h-48
       p-2.5 sm:p-4 md:p-5
       flex flex-col justify-between"
                         >
@@ -41,7 +41,7 @@ export default function Membership() {
                                     </div>
                                 </div>
                             </div>
-                            <p className="text-[6px] sm:text-[9px] md:text-xs text-black/50">
+                            <p className="text-[7px] sm:text-[9px] md:text-xs text-black/50">
                                 $4.99 paid every month.
                             </p>
                         </div>
@@ -49,7 +49,7 @@ export default function Membership() {
                         {/* Lifetime */}
                         <div
                             className="relative rounded-xl mb-6 sm:mb-7 md:mb-8 bg-black aspect-square
-      w-24 h-24 sm:w-36 sm:h-36 md:w-48 md:h-48
+      w-30 h-30 sm:w-36 sm:h-36 md:w-48 md:h-48
       p-2.5 sm:p-4 md:p-5
       text-background flex flex-col justify-between z-10"
                         >
@@ -66,7 +66,7 @@ export default function Membership() {
                                     </h4>
                                 </div>
                             </div>
-                            <p className="text-[6px] sm:text-[9px] md:text-xs text-white/50">
+                            <p className="text-[7px] sm:text-[9px] md:text-xs text-white/50">
                                 $69.99 paid once.
                             </p>
                             <div className="absolute top-1.5 right-1.5 sm:top-2 sm:right-2 md:top-3 md:right-3">
@@ -82,7 +82,7 @@ export default function Membership() {
                         {/* Yearly */}
                         <div
                             className="relative rounded-xl rotate-5 -ml-1 shadow-[0_0_20px_rgba(0,0,0,0.1)] aspect-square
-      w-24 h-24 sm:w-36 sm:h-36 md:w-48 md:h-48
+      w-30 h-30 sm:w-36 sm:h-36 md:w-48 md:h-48
       p-2.5 sm:p-4 md:p-5
       flex flex-col justify-between"
                         >
@@ -102,7 +102,7 @@ export default function Membership() {
                                     </div>
                                 </div>
                             </div>
-                            <p className="text-[6px] sm:text-[9px] md:text-xs text-black/50">
+                            <p className="text-[7px] sm:text-[9px] md:text-xs text-black/50">
                                 $29.99 paid every year.
                             </p>
                             <div className="absolute top-1.5 right-1.5 sm:top-2 sm:right-2 md:top-3 md:right-3">
@@ -121,7 +121,7 @@ export default function Membership() {
                         It grows with you.
                     </p>
 
-                    <p className="font-inter text-xs text-center max-w-150 text-black/50">
+                    <p className="font-inter text-[10px] sm:text-xs text-center max-w-150 text-black/50">
                         You can track as many habits as you need across all your
                         disciplines, while seeing your consistency score through
                         simple progress charts. <br />A minimal calendar helps

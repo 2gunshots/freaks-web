@@ -157,7 +157,7 @@ export default function ContactUsForm() {
                         />
                     </Field>
 
-                    <div className="flex items-center justify-between pt-2">
+                    <div className="flex sm:flex-row flex-col gap-5 sm:gap-0 items-start sm:items-center justify-between pt-2">
                         {/* Status feedback */}
                         {status === "success" && (
                             <p className="text-xs text-green-600">

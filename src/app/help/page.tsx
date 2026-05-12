@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 
 export default function Help() {
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col bg-background">
             <Header />
 
             <main className="flex-1 flex flex-col items-center justify-center px-6 mt-30">
@@ -47,7 +47,7 @@ export default function Help() {
                                 <h3>Getting Started</h3>
                             </div>
                             <div>
-                                <p className="font-sans text-sm text-gray-600 font-inter">
+                                <p className="font-sans text-xs sm:text-sm text-gray-600 font-inter">
                                     Discover how to get started with Freaks,
                                     understand its core features, and make the
                                     most of your experience.

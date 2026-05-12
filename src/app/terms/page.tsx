@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Terms() {
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col bg-background">
             <Header />
 
             <main className="flex-1 flex justify-center px-6">

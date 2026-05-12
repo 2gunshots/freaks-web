@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 
 export default function Home() {
     return (
-        <div className="h-screen w-screen overflow-hidden flex flex-col">
+        <div className="h-screen w-screen overflow-hidden flex flex-col bg-background">
             {/* Header */}
             <header className="border-b px-6 md:px-10 lg:px-24 py-4 flex items-center justify-between">
                 <Link href="/">
@@ -75,7 +75,7 @@ export default function Home() {
                             loading="eager"
                             priority
                         />
-                        
+
                     </div>
                 </div>
             </main>
