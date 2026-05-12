@@ -1,21 +1,23 @@
 import type { Metadata } from "next";
-import { EB_Garamond, Gloock, Libre_Baskerville } from "next/font/google";
+import { EB_Garamond, Libre_Baskerville, Inter } from "next/font/google";
 import "./globals.css";
 
 const libreBaskerville = Libre_Baskerville({
-    // weight: ["400", "700"],
+    weight: ["400", "500", "600"],
     variable: "--font-libre-baskerville",
     subsets: ["latin"],
 });
 
-const ebGaramond = EB_Garamond({
-    variable: "--font-eb-garamond",
+const inter = Inter({
+    weight: ["400", "500", "600", "700", "800"],
+
+    variable: "--font-inter",
     subsets: ["latin"],
 });
 
-const gloock = Gloock({
-    weight: ["400"],
-    variable: "--font-gloock",
+const ebGaramond = EB_Garamond({
+    weight: ["400", "500", "600"],
+    variable: "--font-eb-garamond",
     subsets: ["latin"],
 });
 
@@ -50,7 +52,7 @@ export default function RootLayout({
     return (
         <html
             lang="en"
-            className={` ${ebGaramond.variable} ${gloock.variable} ${libreBaskerville.variable} h-full antialiased`}
+            className={`${inter.variable} ${ebGaramond.variable} ${libreBaskerville.variable} h-full antialiased`}
         >
             <body className="min-h-full flex flex-col overflow-x-hidden">
                 {children}

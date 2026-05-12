@@ -17,7 +17,7 @@ export default function Privacy() {
                         Privacy Policy
                     </h1>
 
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-500 font-inter">
                         Last updated: May 2026
                     </p>
 
@@ -112,8 +112,6 @@ export default function Privacy() {
                         <p>We do not store backup files on our servers.</p>
                     </section>
 
-
-
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
                             5. Notifications
@@ -192,10 +190,10 @@ export default function Privacy() {
                         </p>
 
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Supabase — authentication</li>
-                            <li>Resend — authentication emails</li>
-                            <li>RevenueCat — subscription management</li>
-                            <li>Sentry — crash reporting and diagnostics</li>
+                            <li>Supabase: authentication</li>
+                            <li>Resend: authentication emails</li>
+                            <li>RevenueCat: subscription management</li>
+                            <li>Sentry: crash reporting and diagnostics</li>
                         </ul>
                     </section>
 

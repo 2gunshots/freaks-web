@@ -3,7 +3,7 @@
 :root {
     --background: #f8f8f8;
     --foreground: #1a1408;
-    --accent: #3a7ab0;
+    --accent: #9CC6E4;
     --secondary: #c8a060;
     --surface: #f0e6d6;
 }
@@ -38,6 +38,9 @@
     .font-libre-baskerville {
         font-family: var(--font-libre-baskerville);
     }
+    .font-inter {
+        font-family: var(--font-inter);
+    }
 
     h1 {
         @apply text-3xl font-medium;
@@ -50,9 +53,11 @@
         @apply text-3xl font-medium;
     }
     label {
+        font-family: var(--font-inter);
         @apply text-sm font-medium text-black;
     }
     input {
+        font-family: var(--font-inter);
         @apply appearance-none outline-none border-b-[1.5px] focus:outline-none focus:ring-0;
     }
 }

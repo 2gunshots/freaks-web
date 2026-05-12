@@ -13,9 +13,9 @@ export default function About() {
                                    font-eb-garamond text-lg lg:text-xl
                                    leading-relaxed space-y-6 py-16 font-libre-baskerville"
                 >
-                    <h2 className="text-3xl lg:text-5xl font-semibold">
+                    <h1 className="text-3xl lg:text-5xl font-semibold">
                         Our Story
-                    </h2>
+                    </h1>
 
                     <section className="space-y-3">
                         <p>

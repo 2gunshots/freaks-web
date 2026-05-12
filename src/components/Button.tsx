@@ -1,3 +1,4 @@
+"use Client";
 export default function Button({
     className,
     text,
@@ -5,6 +6,7 @@ export default function Button({
     type = "button",
     disabled = false,
     secondaryBackground,
+    children,
 }: {
     className?: string;
     text?: string;
@@ -12,13 +14,14 @@ export default function Button({
     type?: "button" | "submit" | "reset";
     disabled?: boolean;
     secondaryBackground?: string;
+    children?: React.ReactNode;
 }) {
     return (
         <button
             type={type}
             onClick={onClick}
             disabled={disabled}
-            className={`w-fit flex flex-row justify-between items-center gap-5 py-1 pr-1 pl-7 rounded-full bg-black text-white mt-10 ${!disabled ? "cursor-pointer" : "pointer-events-none"} ${className}`}
+            className={`w-fit flex flex-row justify-between items-center gap-5 py-1 pr-1 pl-7 rounded-full bg-black text-white text-sm font-inter ${!disabled ? "cursor-pointer" : "pointer-events-none"} ${className}`}
         >
             {text}
             <div
@@ -41,9 +44,13 @@ export default function Button({
                 <div
                     className={` aspect-square size-6 flex items-center justify-center rounded-full `}
                 >
-                    <div
-                        className={`w-3 aspect-square rounded-full bg-black`}
-                    ></div>
+                    {children ? (
+                        children
+                    ) : (
+                        <div
+                            className={`w-3 aspect-square rounded-full bg-black`}
+                        ></div>
+                    )}
                 </div>
             </div>
         </button>

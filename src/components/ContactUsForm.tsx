@@ -74,7 +74,7 @@ export default function ContactUsForm() {
     };
 
     return (
-        <section className="bg-surface text-background px-6 lg:px-24 py-16 lg:py-24">
+        <section className="bg-gray-200 text-background px-6 lg:px-24 py-16 lg:py-24 font-inter">
             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-24">
                 {/* Left: heading */}
                 <div className="lg:col-span-2 flex flex-col justify-between gap-8">
@@ -82,7 +82,7 @@ export default function ContactUsForm() {
                         <p className="text-xs uppercase tracking-widest text-foreground mb-4">
                             Support
                         </p>
-                        <h2 className="font-eb-garamond text-4xl lg:text-5xl font-medium leading-tight text-foreground">
+                        <h2 className="font-libre-baskerville text-3xl lg:text-4xl font-medium leading-tight text-foreground">
                             {/* Having trouble?
                             Get in touch */}
                             Got a question?
@@ -183,7 +183,7 @@ export default function ContactUsForm() {
                             }
                             type="submit"
                             className="hover:opacity-70 active:opacity-40 transition duration-300 disabled:opacity-40"
-                            secondaryBackground="bg-secondary"
+                            secondaryBackground="bg-accent"
                             disabled={status === "loading" || !!emailError}
                         />
                     </div>

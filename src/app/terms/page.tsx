@@ -1,14 +1,11 @@
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Link from "next/link";
 
 export default function Terms() {
     return (
         <div className="min-h-screen flex flex-col">
-            <header className="px-6 lg:px-24 py-5 flex items-center justify-between bg-black text-background">
-                <Link href="/">
-                    <h3 className="font-gloock text-3xl">Freaks</h3>
-                </Link>
-            </header>
+            <Header />
 
             <main className="flex-1 flex justify-center px-6">
                 <article
@@ -21,7 +18,7 @@ export default function Terms() {
                         Terms &amp; Conditions
                     </h1>
 
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-500 font-inter">
                         Last updated: May 2026
                     </p>
 
@@ -163,16 +160,16 @@ export default function Terms() {
 
                     <section className="space-y-3">
                         <h2 className="text-xl lg:text-2xl font-semibold">
-                            9. Third-Party Services
+                            9. Third Party Services
                         </h2>
 
                         <p>The app relies on third-party services including:</p>
 
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Supabase — authentication services</li>
-                            <li>Resend — email delivery</li>
-                            <li>RevenueCat — subscription management</li>
-                            <li>Sentry — crash reporting and diagnostics</li>
+                            <li>Supabase: authentication services</li>
+                            <li>Resend: email delivery</li>
+                            <li>RevenueCat: subscription management</li>
+                            <li>Sentry: crash reporting and diagnostics</li>
                         </ul>
 
                         <p>

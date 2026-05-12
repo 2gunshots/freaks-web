@@ -14,9 +14,9 @@ export default function Help() {
                                    font-eb-garamond text-lg lg:text-xl
                                    leading-relaxed space-y-6 py-16 font-libre-baskerville"
                 >
-                    <h2 className="text-3xl lg:text-5xl font-semibold text-center">
+                    <h1 className="text-3xl lg:text-5xl font-semibold text-center">
                         How can we help?
-                    </h2>
+                    </h1>
                     <Link
                         href="/help/getting-started"
                         className="flex flex-row items-center justify-between gap-3"
@@ -47,7 +47,7 @@ export default function Help() {
                                 <h3>Getting Started</h3>
                             </div>
                             <div>
-                                <p className="font-sans text-sm text-gray-600">
+                                <p className="font-sans text-sm text-gray-600 font-inter">
                                     Discover how to get started with Freaks,
                                     understand its core features, and make the
                                     most of your experience.
@@ -58,7 +58,7 @@ export default function Help() {
                 </article>
             </main>
             <ContactUsForm />
-            <Footer backgroundColor="bg-secondary" border={false} />
+            <Footer backgroundColor="bg-accent" border={false} />
         </div>
     );
 }
