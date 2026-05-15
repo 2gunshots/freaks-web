@@ -47,12 +47,34 @@ export const metadata: Metadata = {
         address: false,
         telephone: false,
     },
+    icons: {
+        icon: [
+            { url: "/favicon.ico" },
+            { url: "/icon-32x32.png", sizes: "32x32", type: "image/png" },
+            { url: "/icon-48x48.png", sizes: "48x48", type: "image/png" },
+        ],
+        other: [
+            {
+                rel: "mask-icon",
+                url: "/favicon.svg",
+                color: "#000000",
+            },
+        ],
+    },
     openGraph: {
         title: "Freaks | Habit Tracking & Consistency",
         description:
             "Track habits, build streaks, and stay consistent. Own your data and see the 'freak' in yourself with our organic consistency score.",
         url: "https://freaks.pro",
         siteName: "Freaks",
+        images: [
+            {
+                url: "/images/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Freaks - Leave Nothing to Chance",
+            },
+        ],
         type: "website",
         locale: "en_US",
     },
@@ -61,6 +83,7 @@ export const metadata: Metadata = {
         title: "Freaks | Habit Tracking & Consistency",
         description:
             "Track habits, build streaks, and stay consistent. Own your data and see the 'freak' in yourself with our organic consistency score.",
+        images: ["/images/og-image.png"],
     },
     robots: {
         index: true,
