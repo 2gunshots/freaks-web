@@ -22,25 +22,56 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://freaks.pro"),
     title: {
-        default: "Freaks",
+        default: "Freaks | Habit Tracking & Consistency",
         template: "%s | Freaks",
     },
     description:
-        "Freaks helps you track habits, build streaks, and stay consistent.",
+        "Track habits, build streaks, and stay consistent. Own your data and see the 'freak' in yourself with our organic consistency score.",
     applicationName: "Freaks",
+    keywords: [
+        "habit tracker",
+        "consistency score",
+        "streak builder",
+        "productivity app",
+        "iOS habit app",
+        "self improvement",
+        "routine tracker",
+    ],
+    authors: [{ name: "Freaks Team" }],
+    creator: "Freaks",
+    publisher: "Freaks",
+    formatDetection: {
+        email: false,
+        address: false,
+        telephone: false,
+    },
     openGraph: {
-        title: "Freaks",
+        title: "Freaks | Habit Tracking & Consistency",
         description:
-            "Track habits, build streaks, and stay consistent with Freaks.",
+            "Track habits, build streaks, and stay consistent. Own your data and see the 'freak' in yourself with our organic consistency score.",
+        url: "https://freaks.pro",
         siteName: "Freaks",
         type: "website",
+        locale: "en_US",
     },
     twitter: {
-        card: "summary",
-        title: "Freaks",
+        card: "summary_large_image",
+        title: "Freaks | Habit Tracking & Consistency",
         description:
-            "Track habits, build streaks, and stay consistent with Freaks.",
+            "Track habits, build streaks, and stay consistent. Own your data and see the 'freak' in yourself with our organic consistency score.",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
     },
 };
 

@@ -1,6 +1,13 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "How to Use Freaks | Getting Started",
+    description:
+        "Learn how to create habits, understand the consistency blob, and use charts to track your progress in Freaks.",
+};
 
 export default function GettingStarted() {
     return (

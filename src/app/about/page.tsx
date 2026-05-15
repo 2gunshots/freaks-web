@@ -1,6 +1,13 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Our Story",
+    description:
+        "Discover the philosophy behind Freaks. We believe consistency is better than perfection and that potential demands action.",
+};
 
 export default function About() {
     return (

@@ -3,8 +3,32 @@ import Link from "next/link";
 import Button from "@/components/Button";
 
 export default function Home() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        name: "Freaks",
+        operatingSystem: "iOS",
+        applicationCategory: "ProductivityApplication",
+        offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+        },
+        description:
+            "Track habits, build streaks, and stay consistent. Own your data and see the 'freak' in yourself with our organic consistency score.",
+        aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5",
+            reviewCount: "1",
+        },
+    };
+
     return (
         <div className="h-screen w-screen overflow-hidden flex flex-col bg-background">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Header */}
             <header className="border-b px-6 md:px-10 lg:px-24 py-4 flex items-center justify-between">
                 <Link href="/">
@@ -14,13 +38,6 @@ export default function Home() {
                         width={80}
                         height={31}
                     />
-                </Link>
-                <Link href="/membership" className="rounded-full overflow-h">
-                    <div className="py-2 px-5 bg-foreground text-background rounded-full hover:opacity-85 transition duration-300 ">
-                        <p className="text-xs font-medium font-inter">
-                            Membership
-                        </p>
-                    </div>
                 </Link>
             </header>
 
@@ -42,7 +59,7 @@ export default function Home() {
                         className="inline-flex rounded-full mt-6 hover:opacity-80 transition duration-300 "
                     >
                         <Button
-                            text="Download the app"
+                            text="Download for iOS"
                             className="pointer-events-none font-medium bg-accent md:bg-black text-background "
                             secondaryBackground="bg-accent"
                         >
@@ -75,7 +92,6 @@ export default function Home() {
                             loading="eager"
                             priority
                         />
-
                     </div>
                 </div>
             </main>

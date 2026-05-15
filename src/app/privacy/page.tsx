@@ -1,5 +1,12 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Privacy Policy",
+    description:
+        "Read our privacy policy to understand how Freaks handles your data. We prioritize your privacy and store most data locally on your device.",
+};
 
 export default function Privacy() {
     return (

@@ -21,12 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: 'https://freaks.pro/membership',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
       url: 'https://freaks.pro/privacy',
       lastModified: new Date(),
       changeFrequency: 'monthly',

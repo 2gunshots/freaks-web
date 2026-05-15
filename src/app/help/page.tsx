@@ -2,6 +2,13 @@ import Footer from "@/components/Footer";
 import ContactUsForm from "@/components/ContactUsForm";
 import Link from "next/link";
 import Header from "@/components/Header";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Help Center",
+    description:
+        "Get help with Freaks. Find guides on how to use the app, understand your consistency score, and contact our support team.",
+};
 
 export default function Help() {
     return (

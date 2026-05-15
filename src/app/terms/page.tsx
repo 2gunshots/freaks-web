@@ -1,6 +1,13 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Terms & Conditions",
+    description:
+        "Read the terms and conditions for using Freaks. Understand your rights and our service commitment.",
+};
 
 export default function Terms() {
     return (

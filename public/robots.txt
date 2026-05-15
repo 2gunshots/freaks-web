@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://freaks.com/sitemap.xml
+Sitemap: https://freaks.pro/sitemap.xml
