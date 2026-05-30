@@ -23,6 +23,9 @@ const ebGaramond = EB_Garamond({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://freaks.pro"),
+    alternates: {
+        canonical: "./",
+    },
     title: {
         default: "Freaks | Habit Tracking & Consistency",
         template: "%s | Freaks",
@@ -49,6 +52,7 @@ export const metadata: Metadata = {
     },
     icons: {
         icon: [
+            { url: "/favicon.svg", type: "image/svg+xml" }, 
             { url: "/favicon.ico" },
             { url: "/icon-32x32.png", sizes: "32x32", type: "image/png" },
             { url: "/icon-48x48.png", sizes: "48x48", type: "image/png" },

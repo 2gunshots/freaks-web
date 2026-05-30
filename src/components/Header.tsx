@@ -10,6 +10,7 @@ export default function Header() {
                     alt="Freaks Logo"
                     width={80}
                     height={31}
+                    style={{ height: "auto" }}
                 />
             </Link>
         </header>

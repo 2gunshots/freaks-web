@@ -37,6 +37,7 @@ export default function Home() {
                         alt="Freaks Logo"
                         width={80}
                         height={31}
+                        style={{ height: "auto" }}
                     />
                 </Link>
             </header>
@@ -44,12 +45,21 @@ export default function Home() {
             {/* Hero Section */}
             <main className="flex-1 relative flex items-center justify-between">
                 <div className="max-w-3xl z-10 px-6 md:pl-10 lg:pl-24">
-                    <h1 className="font-eb-garamond font-semibold text-6xl lg:text-7xl  leading-none ">
-                        Leave Nothing <br />
+                    <div className=" pointer-events-none uppercase rounded-lg py-1 px-3 border w-fit mb-2.5">
+                        <p className="text-xs font-medium font-inter select-none">
+                            Join Early
+                        </p>
+                    </div>
+
+                    <h1 className="font-eb-garamond font-semibold text-5xl lg:text-6xl  leading-none ">
+                        Leave <span>Nothing</span> <br />
                         to Chance
                     </h1>
-                    <h2 className="mt-4 text-xl font-inter font-normal">
-                        Track habits. Build streaks. Stay consistent.
+                    <h2 className="mt-4 md:mr-10 text-xl font-inter font-normal text-black/75 leading-relaxed">
+                        Consistency changes everything.
+                        <br />
+                        Track your habits, see your progress and
+                        become the person you want to be.
                     </h2>
                     <a
                         href="https://apps.apple.com/app/id6766063893"

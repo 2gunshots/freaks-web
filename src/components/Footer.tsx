@@ -20,6 +20,7 @@ export default function Footer({
                     alt="Freaks Logo"
                     width={80}
                     height={31}
+                    style={{ height: "auto" }}
                 />
             </Link>
             <div className="flex flex-row items-center gap-2 md:gap-3 lg:gap-4 text-xs underline font-inter">
