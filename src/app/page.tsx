@@ -95,7 +95,7 @@ export default function Home() {
                             className="hidden md:block mix-blend-multiply z-10 h-auto"
                             style={{ width: "clamp(320px, 45vw, 600px)" }}
                             src="/images/freaks-art.webp"
-                            alt="Brand Art"
+                            alt="Freaks App - Visualizing habit consistency with an organic, evolving blob shape"
                             width={858}
                             height={750}
                             sizes="(max-width: 1024px) 45vw, 600px"

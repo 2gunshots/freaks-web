@@ -23,9 +23,6 @@ const ebGaramond = EB_Garamond({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://freaks.pro"),
-    alternates: {
-        canonical: "./",
-    },
     title: {
         default: "Freaks | Habit Tracking & Consistency",
         template: "%s | Freaks",
@@ -41,6 +38,10 @@ export const metadata: Metadata = {
         "iOS habit app",
         "self improvement",
         "routine tracker",
+        "minimalist habit tracker",
+        "private habit app",
+        "data ownership",
+        "habit consistency",
     ],
     authors: [{ name: "Freaks Team" }],
     creator: "Freaks",

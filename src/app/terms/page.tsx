@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Terms & Conditions",
     description:
         "Read the terms and conditions for using Freaks. Understand your rights and our service commitment.",
+    keywords: [
+        "Freaks terms and conditions",
+        "service agreement",
+        "habit tracker terms",
+    ],
+    openGraph: {
+        title: "Terms & Conditions | Freaks",
+        description: "The terms of service for using the Freaks habit tracking app.",
+        type: "website",
+    },
 };
 
 export default function Terms() {

@@ -7,7 +7,20 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Help Center",
     description:
-        "Get help with Freaks. Find guides on how to use the app, understand your consistency score, and contact our support team.",
+        "Find guides on how to use Freaks, understand your consistency score, and get the most out of your habit tracking journey.",
+    keywords: [
+        "Freaks help center",
+        "how to track habits",
+        "consistency score explained",
+        "habit tracker guide",
+        "Freaks app support",
+    ],
+    openGraph: {
+        title: "Help Center | Freaks",
+        description:
+            "Everything you need to know about tracking habits and staying consistent with Freaks.",
+        type: "website",
+    },
 };
 
 export default function Help() {

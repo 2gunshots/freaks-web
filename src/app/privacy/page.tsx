@@ -6,6 +6,17 @@ export const metadata: Metadata = {
     title: "Privacy Policy",
     description:
         "Read our privacy policy to understand how Freaks handles your data. We prioritize your privacy and store most data locally on your device.",
+    keywords: [
+        "Freaks privacy policy",
+        "data ownership",
+        "private habit tracker",
+        "local data storage",
+    ],
+    openGraph: {
+        title: "Privacy Policy | Freaks",
+        description: "Your data stays yours. Learn about our privacy-first approach.",
+        type: "website",
+    },
 };
 
 export default function Privacy() {

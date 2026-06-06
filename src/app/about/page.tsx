@@ -6,7 +6,20 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Our Story",
     description:
-        "Discover the philosophy behind Freaks. We believe consistency is better than perfection and that potential demands action.",
+        "Learn about the philosophy behind Freaks. We're building a habit tracker focused on consistency, data ownership, and seeing the 'freak' in yourself.",
+    keywords: [
+        "habit tracking philosophy",
+        "consistency over perfection",
+        "private habit tracker",
+        "Freaks app story",
+        "consistency score",
+    ],
+    openGraph: {
+        title: "Our Story | Freaks",
+        description:
+            "Consistency is better than perfection. Discover the story and philosophy behind the Freaks habit tracker.",
+        type: "website",
+    },
 };
 
 export default function About() {

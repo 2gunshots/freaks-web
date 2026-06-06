@@ -4,14 +4,56 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "How to Use Freaks | Getting Started",
+    title: "Getting Started",
     description:
         "Learn how to create habits, understand the consistency blob, and use charts to track your progress in Freaks.",
+    keywords: [
+        "how to use Freaks",
+        "habit tracking for beginners",
+        "consistency blob",
+        "setting up habits",
+        "productivity guide",
+    ],
+    openGraph: {
+        title: "How to Use Freaks | Getting Started",
+        description:
+            "A complete guide to starting your consistency journey with Freaks.",
+        type: "article",
+    },
 };
 
 export default function GettingStarted() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://freaks.pro"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Help Center",
+                "item": "https://freaks.pro/help"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Getting Started",
+                "item": "https://freaks.pro/help/getting-started"
+            }
+        ]
+    };
+
     return (
         <div className="min-h-screen flex flex-col bg-background">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <Header />
 
             <main className="flex-1 flex flex-col justify-center items-center px-6">
