@@ -1,10 +1,12 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Getting Started",
+    alternates: {
+        canonical: "/help/getting-started",
+    },
     description:
         "Learn how to create habits, understand the consistency blob, and use charts to track your progress in Freaks.",
     keywords: [
@@ -26,26 +28,26 @@ export default function GettingStarted() {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [
+        itemListElement: [
             {
                 "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://freaks.pro"
+                position: 1,
+                name: "Home",
+                item: "https://freaks.pro",
             },
             {
                 "@type": "ListItem",
-                "position": 2,
-                "name": "Help Center",
-                "item": "https://freaks.pro/help"
+                position: 2,
+                name: "Help Center",
+                item: "https://freaks.pro/help",
             },
             {
                 "@type": "ListItem",
-                "position": 3,
-                "name": "Getting Started",
-                "item": "https://freaks.pro/help/getting-started"
-            }
-        ]
+                position: 3,
+                name: "Getting Started",
+                item: "https://freaks.pro/help/getting-started",
+            },
+        ],
     };
 
     return (
@@ -88,9 +90,10 @@ export default function GettingStarted() {
                         <ul className="list-disc pl-6 space-y-2">
                             <li>
                                 <strong>Make it yours:</strong> If you like
-                                running, call it "Running." If you prefer
-                                general movement, call it "Exercise."
-                                There&rsquo;s no “correct” way to name it.
+                                running, call it &ldquo;Running.&rdquo; If you
+                                prefer general movement, call it
+                                &ldquo;Exercise.&rdquo; There&rsquo;s no
+                                &ldquo;correct&rdquo; way to name it.
                             </li>
                             <li>
                                 <strong>Start simple:</strong> Pick a few habits
@@ -179,15 +182,17 @@ export default function GettingStarted() {
                     <ul className="list-disc pl-6 space-y-3">
                         <li>
                             <strong>Don&rsquo;t obsess over streaks: </strong>{" "}
-                            If you miss a day, nothing breaks. A "streak" is a
-                            fragile vanity metric; a Consistency Score is
-                            resilient. If you&rsquo;re at 90% and you miss a
-                            day, you&rsquo;re still a 89% freak. That&rsquo;s
-                            still an A.
+                            If you miss a day, nothing breaks. A
+                            &ldquo;streak&rdquo; is a fragile vanity metric; a
+                            Consistency Score is resilient. If you&rsquo;re at
+                            90% and you miss a day, you&rsquo;re still a 89%
+                            freak. That&rsquo;s still an A.
                         </li>
 
                         <li>
-                            <strong>Avoid the "Day One Overhaul": </strong>
+                            <strong>
+                                Avoid the &ldquo;Day One Overhaul&rdquo;:{" "}
+                            </strong>
                             Don&rsquo;t try to track 10 new things at once.
                             You&rsquo;ll burn out. Start with 2 or 3 habits that
                             actually matter.
@@ -196,25 +201,25 @@ export default function GettingStarted() {
                         <li>
                             <strong>Don&rsquo;t turn it into guilt: </strong>
                             The data is a mirror, not a judge. If your score is
-                            low, don't beat yourself up, just look at the data
-                            and ask <em>why</em>. Maybe the habit is too big, or
-                            maybe you're tracking something you don't actually
-                            care about.
+                            low, don&apos;t beat yourself up, just look at the
+                            data and ask <em>why</em>. Maybe the habit is too
+                            big, or maybe you&apos;re tracking something you
+                            don&apos;t actually care about.
                         </li>
 
                         <li>
-                            <strong>Don't Perform for the App: </strong> If you
-                            did the work but forgot to log it, you still did the
-                            work. This app is just an assistant. Don't let the
-                            "score" become more important than the practice
-                            itself.
+                            <strong>Don&apos;t Perform for the App: </strong> If
+                            you did the work but forgot to log it, you still did
+                            the work. This app is just an assistant. Don&apos;t
+                            let the &ldquo;score&rdquo; become more important
+                            than the practice itself.
                         </li>
                     </ul>
                     <section className="space-y-3">
                         <p>
-                            Keep it simple. Don't let the tracking get in the
-                            way of the doing. The goal is consistency in real
-                            life, not perfection inside the app.
+                            Keep it simple. Don&apos;t let the tracking get in
+                            the way of the doing. The goal is consistency in
+                            real life, not perfection inside the app.
                         </p>
                     </section>
                 </article>

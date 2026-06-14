@@ -6,6 +6,12 @@
     --accent: #9cc6e4;
     --secondary: #c8a060;
     --surface: #f0e6d6;
+    --font-zodiak: "Zodiak", "Iowan Old Style", "Palatino Linotype",
+        "Book Antiqua", Palatino, Georgia, serif;
+    --font-eb-garamond: Garamond, Baskerville, "Times New Roman", serif;
+    --font-libre-baskerville: Baskerville, Georgia, "Times New Roman", serif;
+    --font-inter: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 @theme inline {
@@ -26,6 +32,14 @@
         background: black;
         color: var(--foreground);
         font-family: Arial, Helvetica, sans-serif;
+    }
+    .font-zodiak {
+        font-family: var(--font-zodiak);
+    }
+    .font-zodiak-thin {
+        font-family: var(--font-zodiak);
+        font-weight: 100;
+        font-style: normal;
     }
     .font-eb-garamond {
         font-family: var(--font-eb-garamond);

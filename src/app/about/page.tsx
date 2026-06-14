@@ -1,10 +1,12 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Our Story",
+    alternates: {
+        canonical: "/about",
+    },
     description:
         "Learn about the philosophy behind Freaks. We're building a habit tracker focused on consistency, data ownership, and seeing the 'freak' in yourself.",
     keywords: [

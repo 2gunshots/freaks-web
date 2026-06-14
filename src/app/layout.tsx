@@ -1,24 +1,23 @@
 import type { Metadata } from "next";
-import { EB_Garamond, Libre_Baskerville, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const libreBaskerville = Libre_Baskerville({
-    weight: ["400", "500", "600"],
-    variable: "--font-libre-baskerville",
-    subsets: ["latin"],
-});
-
-const inter = Inter({
-    weight: ["400", "500", "600", "700", "800"],
-
-    variable: "--font-inter",
-    subsets: ["latin"],
-});
-
-const ebGaramond = EB_Garamond({
-    weight: ["400", "500", "600"],
-    variable: "--font-eb-garamond",
-    subsets: ["latin"],
+const zodiak = localFont({
+    src: [
+        {
+            path: "../../public/fonts/Zodiak-Thin.woff2",
+            weight: "100",
+            style: "normal",
+        },
+        {
+            path: "../../public/fonts/Zodiak-Thin.woff",
+            weight: "100",
+            style: "normal",
+        },
+    ],
+    variable: "--font-zodiak",
+    display: "swap",
+    fallback: ["Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Palatino", "Georgia", "serif"],
 });
 
 export const metadata: Metadata = {
@@ -26,6 +25,9 @@ export const metadata: Metadata = {
     title: {
         default: "Freaks | Habit Tracking & Consistency",
         template: "%s | Freaks",
+    },
+    alternates: {
+        canonical: "/",
     },
     description:
         "Track habits, build streaks, and stay consistent. Own your data and see the 'freak' in yourself with our organic consistency score.",
@@ -109,10 +111,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html
-            lang="en"
-            className={`${inter.variable} ${ebGaramond.variable} ${libreBaskerville.variable} h-full antialiased`}
-        >
+        <html lang="en" className={`${zodiak.variable} h-full antialiased`}>
             <body className="min-h-full flex flex-col overflow-x-hidden">
                 {children}
             </body>

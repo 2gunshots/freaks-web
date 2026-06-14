@@ -92,7 +92,8 @@ export default function ContactUsForm() {
                     </div>
                     <p className="font-sans text-sm text-gray-700 leading-relaxed max-w-xs">
                         Have an issue, question, or something not working as
-                        expected? Let us know and we'll help you sort it out.
+                        expected? Let us know and we&apos;ll help you sort it
+                        out.
                     </p>
                 </div>
 
@@ -161,7 +162,8 @@ export default function ContactUsForm() {
                         {/* Status feedback */}
                         {status === "success" && (
                             <p className="text-xs text-green-600">
-                                Message sent! We'll get back to you shortly.
+                                Message sent! We&apos;ll get back to you
+                                shortly.
                             </p>
                         )}
                         {status === "error" && (

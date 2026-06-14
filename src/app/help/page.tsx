@@ -6,6 +6,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Help Center",
+    alternates: {
+        canonical: "/help",
+    },
     description:
         "Find guides on how to use Freaks, understand your consistency score, and get the most out of your habit tracking journey.",
     keywords: [
