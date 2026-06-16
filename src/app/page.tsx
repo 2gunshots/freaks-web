@@ -53,7 +53,7 @@ export default function Home() {
                 </div>
 
                 <div className="relative z-10 flex flex-col items-center justify-center px-6 text-center w-full">
-                    <h1 className="font-inter font-thin text-5xl sm:text-7xl md:text-8xl lg:text-[9rem] leading-[1] tracking-tight text-white drop-shadow-sm mix-blend-difference">
+                    <h1 className="font-inter font-thin text-5xl sm:text-7xl md:text-8xl lg:text-[8rem] leading-[1] tracking-tight text-white drop-shadow-sm mix-blend-difference">
                         Build better
                         <br />
                         <span className="font-zodiak italic font-light lowercase">habits.</span>
