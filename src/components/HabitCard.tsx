@@ -9,8 +9,9 @@ export default function HabitCard() {
                 </div>
                 <div className="lg:col-span-2 flex flex-col items-center justify-center">
                     <h3 className="font-inter  text-lg md:text-xl font-semibold tracking-tight text-white text-center">
+                        <span className="text-xs uppercase">Upcoming</span>
                         <br />
-                        Designed to evolve <br />
+                        Beautiful Habit cards <br />
                     </h3>
                     <p className="mt-2 font-inter text-sm md:text-[0.95rem] max-w-xl text-white/60 leading-relaxed text-center">
                         Freaks is something we genuinely care about and

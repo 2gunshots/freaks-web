@@ -105,7 +105,7 @@ export default function About() {
 
                         <p>
                             We&apos;re here for the people who are a little too
-                            intense about their morning routine. For the ones
+                            intense about their routines. For the ones
                             who track their habits not because they have to, but
                             because they love to show up, every single time. We
                             want to know that when the world got messy, we

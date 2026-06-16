@@ -35,7 +35,7 @@ export default function Preview() {
                                 />
                                 <svg
                                     viewBox="0 0 228.5 228.5"
-                                    className="absolute inset-0 h-full w-full"
+                                    className="absolute inset-0 h-full w-full pointer-events-none"
                                     aria-hidden="true"
                                 >
                                     <foreignObject
@@ -110,7 +110,7 @@ export default function Preview() {
                     </div>
                 </div>
 
-                <div className="min-w-0 row-start-2 sm:row-start-1 sm:col-start-2 lg:row-start-2 lg:col-start-1 sm:h-full flex items-center justify-center lg:items-start">
+                <div className="min-w-0 mb-5 sm:mb-0 row-start-2 sm:row-start-1 sm:col-start-2 lg:row-start-2 lg:col-start-1 sm:h-full flex items-center justify-center lg:items-start">
                     <div className="mx-auto max-w-sm px-2 md:max-w-none md:px-1 text-center">
                         <h3 className="font-inter text-lg md:text-xl font-semibold tracking-tight text-black">
                             Consistency Score
@@ -122,7 +122,7 @@ export default function Preview() {
                     </div>
                 </div>
 
-                <div className="min-w-0 row-start-4 sm:row-start-2 sm:col-start-1 lg:row-start-2 lg:col-start-2 sm:h-full flex items-center justify-center lg:items-start">
+                <div className="min-w-0 mb-5 sm:mb-0 row-start-4 sm:row-start-2 sm:col-start-1 lg:row-start-2 lg:col-start-2 sm:h-full flex items-center justify-center lg:items-start">
                     <div className="mx-auto max-w-sm px-2 md:max-w-none md:px-1 text-center">
                         <h3 className="font-inter text-lg md:text-xl font-semibold tracking-tight text-black">
                             Calendar Days
@@ -134,7 +134,7 @@ export default function Preview() {
                     </div>
                 </div>
 
-                <div className="min-w-0 row-start-6 sm:row-start-3 sm:col-start-2 lg:row-start-2 lg:col-start-3 sm:h-full flex items-center justify-center lg:items-start">
+                <div className="min-w-0 mb-5 sm:mb-0 row-start-6 sm:row-start-3 sm:col-start-2 lg:row-start-2 lg:col-start-3 sm:h-full flex items-center justify-center lg:items-start">
                     <div className="mx-auto max-w-sm px-2 md:max-w-none md:px-1 text-center">
                         <h3 className="font-inter text-lg md:text-xl font-semibold tracking-tight text-black">
                             Consistency Blob

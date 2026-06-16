@@ -26,9 +26,6 @@ export const metadata: Metadata = {
         default: "Freaks | Habit Tracking & Consistency",
         template: "%s | Freaks",
     },
-    alternates: {
-        canonical: "/",
-    },
     description:
         "Track habits, build streaks, and stay consistent. Own your data and see the 'freak' in yourself with our organic consistency score.",
     applicationName: "Freaks",

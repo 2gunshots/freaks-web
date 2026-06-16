@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import Preview from "@/components/Preview";
 import HabitCard from "@/components/HabitCard";
+import HeroImage from "@/components/HeroImage";
 
 export const metadata: Metadata = {
     alternates: {
@@ -47,28 +48,23 @@ export default function Home() {
             </header>
 
             {/* Hero Section */}
-            <main className="flex-1 relative flex items-center justify-between">
-                <div className=" w-full px-6 md:pl-10 lg:pl-24 py-24 flex flex-col items-center justify-center">
-                    <p className="text-center font-medium font-inter mb-0 text-black">
-                        {/* Freaks makes consistency effortless with */}
-                        Stay consistent with effortlessly with
-                    </p>
-                    <h1 className="font-inter font-extrabold text-5xl lg:text-7xl leading-none text-center">
-                        Habits
-                        <span className="font-eb-garamond font-black">
-                            ,
-                        </span>{" "}
-                        Notes
+            <main className="relative w-full h-[calc(100svh-74px)] min-h-[600px] flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 z-0 bg-black overflow-hidden">
+                    <HeroImage />
+                </div>
+
+                <div className="relative z-10 flex flex-col items-center justify-center px-6 text-center w-full">
+                    <h1 className="font-inter font-thin text-5xl sm:text-7xl md:text-8xl lg:text-[9rem] leading-[1] tracking-tight text-white drop-shadow-sm mix-blend-difference">
+                        Build better
                         <br />
-                        <span className="font-zodiak">&</span> Calendar
+                        <span className="font-zodiak italic font-light lowercase">habits.</span>
                     </h1>
-                    <p className="text-center text-lg font-medium font-inter mb-2 text-gray-800 max-w-3xl mt-4">
-                        Freaks is an app that helps you build habits, reflect on
-                        what is important with notes and lets you track your progress
-                        through stats and a calendar designed for long term
-                        growth.
+
+                    <p className="mt-8 text-sm md:text-base lg:text-lg font-inter font-light text-white/90 max-w-md tracking-wider leading-relaxed mix-blend-difference">
+                       A simple place to track habits, jot down notes and just see how you're doing over time.
                     </p>
-                    <div className="mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+
+                    <div className="mt-12 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
                         <a
                             href="https://apps.apple.com/app/id6766063893"
                             target="_blank"
@@ -134,27 +130,21 @@ export default function Home() {
                                 </span>
                             </span>
                         </a>
-                    </div>
+                        </div>
                 </div>
-                {/* <div>
-                    <div className="relative hidden md:flex items-center justify-center min-w-[320px] pr-6 lg:pr-12">
-                        <Image
-                            className="relative hidden md:block mix-blend-multiply z-10 h-auto"
-                            style={{ width: "clamp(320px, 45vw, 600px)" }}
-                            src="/images/freaks-art.webp"
-                            alt="Freaks App - Visualizing habit consistency with an organic, evolving blob shape"
-                            width={858}
-                            height={750}
-                            sizes="(max-width: 1024px) 45vw, 600px"
-                            loading="eager"
-                            priority
-                        />
-                    </div>
-                </div> */}
             </main>
-            <div className="mb-24">
+
+            <section className="mt-24 md:mt-48 mb-24 flex flex-col w-full">
+                <div className="px-6 md:px-10 lg:px-24 mb-12 md:mb-20 flex flex-col items-center text-center">
+                    <h2 className="font-inter font-light text-4xl md:text-5xl lg:text-6xl tracking-tight text-black">
+                        Clarity in <span className="font-zodiak italic font-extralight text-gray-500 lowercase">motion.</span>
+                    </h2>
+                    <p className="mt-6 text-base md:text-lg font-inter font-light text-gray-600 max-w-2xl leading-relaxed tracking-wide">
+                        Everything you need to track, reflect, and grow, beautifully organized in one minimal interface.
+                    </p>
+                </div>
                 <Preview />
-            </div>
+            </section>
 
             <HabitCard />
 
