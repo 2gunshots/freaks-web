@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import Preview from "@/components/Preview";
 import HabitCard from "@/components/HabitCard";
 import HeroImage from "@/components/HeroImage";
-
 export const metadata: Metadata = {
     alternates: {
         canonical: "/",
@@ -64,7 +63,7 @@ export default function Home() {
                        A simple place to track habits, jot down notes and just see how you're doing over time.
                     </p>
 
-                    <div className="mt-12 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+                    <div className="mt-12 flex flex-wrap items-center justify-center gap-3 sm:gap-4 w-full">
                         <a
                             href="https://apps.apple.com/app/id6766063893"
                             target="_blank"
@@ -130,7 +129,7 @@ export default function Home() {
                                 </span>
                             </span>
                         </a>
-                        </div>
+                    </div>
                 </div>
             </main>
 

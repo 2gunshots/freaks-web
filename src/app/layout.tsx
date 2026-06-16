@@ -102,6 +102,8 @@ export const metadata: Metadata = {
     },
 };
 
+import SmoothScroll from "@/components/SmoothScroll";
+
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -110,7 +112,9 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${zodiak.variable} h-full antialiased`}>
             <body className="min-h-full flex flex-col overflow-x-hidden">
-                {children}
+                <SmoothScroll>
+                    {children}
+                </SmoothScroll>
             </body>
         </html>
     );
