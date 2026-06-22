@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 export default function Home() {
     const jsonLd = {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
+        "@type": "mobileApplication",
         name: "Freaks",
         url: "https://freaks.pro",
-        operatingSystem: "iOS",
+        operatingSystem: "iOS,Android",
         applicationCategory: "ProductivityApplication",
         offers: {
             "@type": "Offer",
@@ -24,7 +24,7 @@ export default function Home() {
             priceCurrency: "USD",
         },
         description:
-            "Track habits, build streaks, and stay consistent. Own your data and see the 'freak' in yourself with our organic consistency score.",
+            "A simple place to track habits, write down notes and just see how you're doing over time.",
     };
 
     return (
@@ -56,11 +56,14 @@ export default function Home() {
                     <h1 className="font-inter font-thin text-5xl sm:text-7xl md:text-8xl lg:text-[8rem] leading-[1] tracking-tight text-white drop-shadow-sm mix-blend-difference">
                         Build better
                         <br />
-                        <span className="font-zodiak italic font-light lowercase">habits.</span>
+                        <span className="font-zodiak italic font-light lowercase">
+                            habits.
+                        </span>
                     </h1>
 
                     <p className="mt-8 text-sm md:text-base lg:text-lg font-inter font-light text-white/90 max-w-md tracking-wider leading-relaxed mix-blend-difference">
-                       A simple place to track habits, jot down notes and just see how you're doing over time.
+                        A simple place to track habits, jot down notes and just
+                        see how you&apos;re doing over time.
                     </p>
 
                     <div className="mt-12 flex flex-wrap items-center justify-center gap-3 sm:gap-4 w-full">
@@ -136,10 +139,14 @@ export default function Home() {
             <section className="mt-24 md:mt-48 mb-24 flex flex-col w-full">
                 <div className="px-6 md:px-10 lg:px-24 mb-12 md:mb-20 flex flex-col items-center text-center">
                     <h2 className="font-inter font-light text-4xl md:text-5xl lg:text-6xl tracking-tight text-black">
-                        Clarity in <span className="font-zodiak italic font-extralight text-gray-500 lowercase">motion.</span>
+                        Clarity in{" "}
+                        <span className="font-zodiak italic font-extralight text-gray-500 lowercase">
+                            motion.
+                        </span>
                     </h2>
                     <p className="mt-6 text-base md:text-lg font-inter font-light text-gray-600 max-w-2xl leading-relaxed tracking-wide">
-                        Everything you need to track, reflect, and grow, beautifully organized in one minimal interface.
+                        Everything you need to track, reflect, and grow,
+                        beautifully organized in one minimal interface.
                     </p>
                 </div>
                 <Preview />

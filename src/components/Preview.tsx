@@ -1,13 +1,8 @@
-import { format } from "date-fns";
+import CalendarDateOverlay from "./CalendarDateOverlay";
 import ConsistencyScoreCard from "./ConsistencyScoreCard";
 import MorphingBlob from "./MorphingBlob";
 
 export default function Preview() {
-    const today = new Date();
-    const day = format(today, "EEE").toUpperCase();
-    const month = format(today, "MMMM");
-    const date = format(today, "dd");
-
     return (
         <section className="w-full px-6 md:px-10 lg:px-24 select-none">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
@@ -44,57 +39,7 @@ export default function Preview() {
                                         width="92"
                                         height="68"
                                     >
-                                        <div
-                                            style={{
-                                                display: "inline-flex",
-                                                flexDirection: "column",
-                                                alignItems: "center",
-                                                width: "max-content",
-                                                lineHeight: 1,
-                                            }}
-                                        >
-                                            <div
-                                                style={{
-                                                    fontFamily:
-                                                        "var(--font-inter), sans-serif",
-                                                    fontSize: "7px",
-                                                    fontWeight:
-                                                        day === "SUN"
-                                                            ? 500
-                                                            : 400,
-                                                    letterSpacing: "0.04em",
-                                                    color:
-                                                        day === "SUN"
-                                                            ? "#dc2626"
-                                                            : "rgba(255,255,255,0.72)",
-                                                }}
-                                            >
-                                                {day}
-                                            </div>
-                                            <div
-                                                style={{
-                                                    marginTop: "-1px",
-                                                    fontFamily:
-                                                        "var(--font-zodiak), serif",
-                                                    fontSize: "24px",
-                                                    color: "white",
-                                                }}
-                                            >
-                                                {date}
-                                            </div>
-                                            <div
-                                                style={{
-                                                    marginTop: "-1px",
-                                                    fontFamily:
-                                                        "var(--font-inter), sans-serif",
-                                                    fontSize: "9px",
-                                                    fontWeight: 400,
-                                                    color: "rgba(255,255,255,0.72)",
-                                                }}
-                                            >
-                                                {month}
-                                            </div>
-                                        </div>
+                                        <CalendarDateOverlay />
                                     </foreignObject>
                                 </svg>
                             </div>

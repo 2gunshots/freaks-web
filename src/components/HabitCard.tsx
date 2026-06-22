@@ -19,7 +19,7 @@ export default function HabitCard() {
                     </p>
                 </div>
             </div>
-            <Image
+            {/* <Image
                 className="pointer-events-none absolute right-0 top-0 hidden h-[80%] w-auto object-contain opacity-25 mix-blend-screen lg:block"
                 src="/images/clouds.png"
                 alt="habit card"
@@ -27,7 +27,7 @@ export default function HabitCard() {
                 height={500}
                 sizes="(max-width: 1023px) 0px, 500px"
                 priority
-            />
+            /> */}
         </div>
     );
 }
